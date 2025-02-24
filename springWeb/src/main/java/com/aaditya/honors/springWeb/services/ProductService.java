@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @Service
 public class ProductService {
     private ArrayList<Product> products = new ArrayList<>(Arrays.asList(new Product("Laptop", 850), new Product("Mobile", 999)));
-    @GetMapping("/products")
+
     public List<Product> getProducts(){
         return products;
     }
@@ -28,5 +28,10 @@ public class ProductService {
         Product target_prod = getProductByID(id);
         target_prod.setName(product.getName());
         target_prod.setPrice(product.getPrice());
+    }
+
+    public void deleteProductByID(int id) {
+        Product product = getProductByID(id);
+        products.remove(product);
     }
 }
