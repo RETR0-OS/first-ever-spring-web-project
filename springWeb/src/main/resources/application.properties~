@@ -1,7 +1,7 @@
 spring.application.name=springWeb
 spring.datasource.url=${DB_URL:jdbc:mysql://localhost:3306/springwebtuitorial}
-spring.datasource.username=${DB_USER:root}
-spring.datasource.password=${DB_PASSWORD:toor}
+spring.datasource.username=springWebTuitorial
+spring.datasource.password=Aaditya1234567890
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
